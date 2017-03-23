@@ -63,7 +63,7 @@ data = Counter(Total)
 #print(data.most_common())
 
 data_nomatch = Counter(unname)
-top_20_percent = round(len(data_nomatch.most_common())*1)
+top_20_percent = round(len(data_nomatch.most_common())*.2)
 top_20_set = list(range(1,top_20_percent))
 
 for i in range(len(top_20_set)):
@@ -91,7 +91,7 @@ for i in range(len(top_20_set)):
 		gset.append(str(data_nomatch.most_common(j))[3 + name_length:n])
 	else:
 		continue
-for i in range (1,10):
+for i in range (1,6):
 	rand_b = choice(bset)
 	boys_check = input("Does " + rand_b + " sound like a boy? " + "\n" +"a) Yes" + "\n" + "b) No" + "\n" + "c) Not Sure" + "\n")
 	print()
